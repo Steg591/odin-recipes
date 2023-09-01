@@ -1,0 +1,50 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: pink;
+    margin: 30px;
+    /* opacity: 90%; */
+    background: rgb(235, 210, 164); /* Fallback for older browsers without RGBA-support */
+    background: rgba(235, 210, 164, 0.9);
+}
+
+
+.sitetitle {
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.menuitem {
+    color: red;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+
+.menubutton {
+    font-size: 20px;
+    /* background-color: blue; */
+    text-align: right;
+}
+
+
+html {
+    --s: 150px; /* control the size */
+    --c1: #f7d2a1;
+    --c2: #05057e;
+  
+    --_g: 
+       var(--c1) 0%  5% ,var(--c2) 6%  15%,var(--c1) 16% 25%,var(--c2) 26% 35%,var(--c1) 36% 45%,
+       var(--c2) 46% 55%,var(--c1) 56% 65%,var(--c2) 66% 75%,var(--c1) 76% 85%,var(--c2) 86% 95%,
+       #0000 96%;
+    background:
+      radial-gradient(50% 50% at 100% 0,var(--_g)),
+      radial-gradient(50% 50% at 0 100%,var(--_g)),
+      radial-gradient(50% 50%,var(--_g)),
+      radial-gradient(50% 50%,var(--_g)) calc(var(--s)/2) calc(var(--s)/2)
+      var(--c1);
+    background-size: var(--s) var(--s);
+  }
+  
